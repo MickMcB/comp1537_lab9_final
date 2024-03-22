@@ -1,5 +1,8 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
+
+app.use(cors()); // disable cross-origin resource sharing
 
 app.listen(3000, () => {
     console.log("Listening to port 3000");
