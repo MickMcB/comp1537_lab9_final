@@ -11,7 +11,7 @@ app.listen(3000, () => {
 app.get("/getWeatherOfACityByName", (req, res) => {
     x = undefined;
     fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${req.query.cname}&appid=b660f3402c54cb9a9c48f89c35249e5c&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${req.query.cname}&appid=6761fb9fde5f1c414514bb025a09bdd4&units=metric`
     )
         .then((resp) => resp.json())
         .then((resp) => {
